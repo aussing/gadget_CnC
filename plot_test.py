@@ -2,7 +2,7 @@ import pynbody
 import numpy as np
 import matplotlib.pyplot as plt
 
-s = pynbody.load('snapshot_025.hdf5')
+s = pynbody.load('snapshot_010.hdf5')
 s.physical_units()
 halos = s.halos()
 h1 = halos[1]
