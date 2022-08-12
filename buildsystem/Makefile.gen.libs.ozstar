@@ -1,0 +1,11 @@
+## Modified to specify exact Ozstar library locations
+
+GSL_INCL   = -I$/apps/skylake/software/mpi/gcc/9.2.0/openmpi/4.0.2/gsl/2.5/include
+GSL_LIBS   = -L$/apps/skylake/software/mpi/gcc/9.2.0/openmpi/4.0.2/gsl/2.5/lib
+FFTW_INCL  = -I$/apps/skylake/software/mpi/gcc/9.2.0/openmpi/4.0.2/fftw/3.3.8/include
+FFTW_LIBS  = -L$/apps/skylake/software/mpi/gcc/9.2.0/openmpi/4.0.2/fftw/3.3.8/lib
+HDF5_INCL  = -I$/apps/skylake/software/mpi/gcc/9.2.0/openmpi/4.0.2/hdf5/1.10.5/include
+HDF5_LIBS  = -L$/apps/skylake/software/mpi/gcc/9.2.0/openmpi/4.0.2/hdf5/1.10.5/lib
+HWLOC_INCL = -I$/apps/skylake/software/core/hwloc/2.0.3/include
+HWLOC_LIBS = -L$/apps/skylake/software/core/hwloc/2.0.3/lib
+
