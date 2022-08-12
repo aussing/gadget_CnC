@@ -2,11 +2,9 @@
 # Basic code operation
 
     LEAN
-
     PERIODIC
     SELFGRAVITY
     RANDOMIZE_DOMAINCENTER
-    
 # Gravity options
 
     PMGRID=384

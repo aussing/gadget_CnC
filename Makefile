@@ -106,7 +106,7 @@ RESULT     := $(shell SRC_DIR=$(SRC_DIR) BUILD_DIR=$(BUILD_DIR) ./buildsystem/gi
 #define available Systems#
 ##########################
 ifeq ($(SYSTYPE),"Generic-gcc")
-include buildsystem/Makefile.gen.libs
+include buildsystem/Makefile.gen.libs.ozstar
 include buildsystem/Makefile.comp.gcc
 endif
 ifeq ($(SYSTYPE),"Generic-intel")
