@@ -1,7 +1,7 @@
 #!/bin/bash -l
 ##SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --mail-user=harry.potter@swin.edu.au
-#SBATCH --time=15:00:00
+##SBATCH --mail-user=harry.potter@swin.edu.au
+#SBATCH --time=01:30:00
 #SBATCH --nodes=1
 #SBATCH --ntasks=32
 #SBATCH --mem-per-cpu=5000MB
