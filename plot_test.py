@@ -1,17 +1,9 @@
-import pynbody
 import numpy as np
 import matplotlib.pyplot as plt
+import h5py
 
-s = pynbody.load('snapshot_010.hdf5')
-s.physical_units()
-halos = s.halos()
-h1 = halos[1]
-h1_coords = h1['pos']
+snap = h5py.File('examples/DM-L50-N128/output/snapshot_002.hdf5','r')
+pos = np.array(snap['PartType1']['Coordinates'])
 
-# pynbody.analysis.halo.center(halos[1], vel=False)
-# fig = pynbody.plot.image(halos[1].d)#, width = '40 kpc', cmap=plt.cm.Greys)#, units = 'Msol kpc^-2')
-# fig = plt.hist2d(h1_coords[:,0],h1_coords[:,1],bins=1000)
-fig = plt.scatter(h1_coords[:,0],h1_coords[:,1],s=0.1)
-fig = plt.xlim((-200,200))
-fig = plt.ylim((-200,200))
-fig = plt.savefig('Pynbody_test.png')
+fig = plt.scatter(pos[:,0],pos[:,1],s=0.0001)
+fig = plt.savefig('scatter_plot.png')
